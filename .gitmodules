@@ -1,3 +1,15 @@
 [submodule "submodules/hpc-matrix-ops"]
 	path = submodules/hpc-matrix-ops
 	url = git@github.com:duanegoodner/hpc-matrix-ops.git
+[submodule "submodules/hpc-irregular-mem-access"]
+	path = submodules/hpc-irregular-mem-access
+	url = git@github.com:duanegoodner/hpc-irregular-mem-accesss.git
+[submodule "submodules/hpc-primes-gs"]
+	path = submodules/hpc-primes-gs
+	url = git@github.com:duanegoodner/hpc-primes-gs.git
+[submodule "submodules/hpc-gas-sim"]
+	path = submodules/hpc-gas-sim
+	url = git@github.com:duanegoodner/hpc-gas-sim.git
+[submodule "submodules/hpc-dist-hist-sort"]
+	path = submodules/hpc-dist-hist-sort
+	url = git@github.com:duanegoodner/hpc-dist-hist-sort.git
