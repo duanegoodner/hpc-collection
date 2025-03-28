@@ -1,0 +1,3 @@
+[submodule "submodules/hpc-matrix-ops"]
+	path = submodules/hpc-matrix-ops
+	url = git@github.com:duanegoodner/hpc-matrix-ops.git
