@@ -6,11 +6,11 @@ This repository showcases a set of advanced high-performance computing (HPC) pro
 
 | Project Name | Description |
 |--------------|-------------|
-| [`hpc-irregular-mem-access`](./public/hpc-irregular-mem-access) | Explores cache performance in irregular memory access patterns and compiler optimizations. |
-| [`hpc-matrix-ops`](./public/hpc-matrix-ops) | Implements tiled matrix transpose and multiplication with OpenMP loop-level parallelism. |
-| [`hpc-primes-gs`](./public/hpc-primes-gs) | Benchmarks OpenMP scheduling for prime checking and synchronizes a parallel Gauss-Seidel solver. |
-| [`hpc-gas-sim`](./public/hpc-gas-sim) | Simulates 2D molecular dynamics with MPI and AMPI, including ghost particle exchange and load balancing. |
-| [`hpc-dist-hist-sort`](./public/hpc-dist-hist-sort) | Performs a distributed histogram sort using MPI one-sided messaging and quantile-based binning. |
+| [`hpc-irregular-mem-access`](./public/hpc-irregular-mem-access/README.md) | Explores cache performance in irregular memory access patterns and compiler optimizations. |
+| [`hpc-matrix-ops`](./public/hpc-matrix-ops/README.md) | Implements tiled matrix transpose and multiplication with OpenMP loop-level parallelism. |
+| [`hpc-primes-gs`](./public/hpc-primes-gs/README.md) | Benchmarks OpenMP scheduling for prime checking and synchronizes a parallel Gauss-Seidel solver. |
+| [`hpc-gas-sim`](./public/hpc-gas-sim/README.md) | Simulates 2D molecular dynamics with MPI and AMPI, including ghost particle exchange and load balancing. |
+| [`hpc-dist-hist-sort`](./public/hpc-dist-hist-sort/README.md) | Performs a distributed histogram sort using MPI one-sided messaging and quantile-based binning. |
 
 Each project directory includes a detailed summary of methods, performance insights, and the HPC concepts demonstrated.
 
@@ -22,13 +22,23 @@ Each project directory includes a detailed summary of methods, performance insig
 - **Environments:** VMFarm, Singularity container
 - **Performance Tuning:** Cache optimization, tiling, scheduling strategies, communication pattern design
 
-## 📬 Requesting Access
+## 🔐 Code Access
 
-These projects were completed as part of a graduate-level course in parallel programming. To comply with academic integrity policies, the full source code is stored in private repositories and cannot be made publicly accessible.
-
-If you would like access to any project for **portfolio review**, **learning**, or **evaluation purposes**, feel free to reach out:
+To request access to the source code for portfolio review, collaboration, or evaluation purposes, please email:
 
 📧 [dmgoodner@gmail.com](mailto:dmgoodner@gmail.com?subject=Access%20Request%20–%20hpc-collection)
 
-Please include the phrase **"Access Request – hpc-collection"** in your subject line so I can respond promptly.  
-Access is gladly granted as long as the intended use complies with academic integrity guidelines.
+Just include **"Access Request – hpc-collection"** in your subject line. I'm happy to share, as long as usage aligns with academic integrity guidelines.
+
+🔗 **Note:** Each project is linked as a Git submodule under the `./submodules/` directory. Once collaborator access is granted, you can initialize and pull the code like this:
+
+```bash
+git clone https://github.com/duanegoodner/hpc-collection.git
+cd hpc-collection
+git submodule update --init --recursive
+```
+If you've already cloned the repo and need to pull submodule changes later, use:
+```bash
+git submodule update --remote --merge
+```
+---
